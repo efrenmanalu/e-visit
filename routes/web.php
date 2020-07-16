@@ -31,7 +31,7 @@ Route::get('/Admin/Kelolaakun/edit', function () {
     return view('/Admin/Kelolaprofil');
 });
 Route::get('/DaftarRequest', function () {
-    return view('/Operator/Daftarrequest');
+    return view('/Operator/Daftarrequestjhadsg');
 });
 
 //Operator
