@@ -35,9 +35,9 @@ Route::get('/DaftarRequest', function () {
 });
 
 //Operator
-Route::get('/Operator', 'KunjunganController@getopd')->middleware('auth:operator');
+Route::get('/Operator', 'KunjunganController@create')->middleware('auth:operator');
 //Route::POST('Operator.fetch', 'KunjunganController@fetch')->name('KunjunganController.fetch');
-Route::POST('/Operator', 'KunjunganController@getopd')->middleware('auth:operator')->name('kunjungan');
+Route::POST('/Operator', 'KunjunganController@create')->middleware('auth:operator')->name('kunjungan');
 //Route::POST('Operator.store', 'KunjunganController@store')->name('KunjunganController.store');
 
 
